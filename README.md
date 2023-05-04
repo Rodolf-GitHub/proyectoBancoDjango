@@ -1,0 +1,1 @@
+esta es una aplicacion para la universidad que simula una pagina web de un banco. hecha en django

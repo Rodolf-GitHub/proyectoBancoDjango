@@ -11,7 +11,7 @@ class Usuario(models.Model):
 
 class Banquero(models.Model):
     rol = models.CharField(max_length=20)
-    nombre_usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, primary_key=True)
+    nombre_usuario = models.OneToOneField(Usuario, on_delete=models.CASCADE, primary_key=True)
 
     def __str__(self):
         return self.nombre_usuario.nombre_usuario
